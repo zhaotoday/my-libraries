@@ -4,20 +4,6 @@
   "description": "publish to npm",
   "main": "index.js",
   "scripts": {},
-  "betterScripts": {
-    "build": {
-      "command": "node build",
-      "env": {
-        "BUILD": "production"
-      }
-    },
-    "dev": {
-      "command": "node build",
-      "env": {
-        "BUILD": "development"
-      }
-    }
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zhaotoday/rollup.js.git"
