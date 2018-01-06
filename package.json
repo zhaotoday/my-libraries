@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zhaotoday/rollup.git"
+    "url": "git+https://github.com/zhaotoday/rollup.js.git"
   },
   "keywords": [
     "npm",
@@ -29,9 +29,9 @@
   "author": "zhaojintian",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zhaotoday/rollup/issues"
+    "url": "https://github.com/zhaotoday/rollup.js/issues"
   },
-  "homepage": "https://github.com/zhaotoday/rollup#readme",
+  "homepage": "https://github.com/zhaotoday/rollup.js#readme",
   "devDependencies": {
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-es2015": "^6.24.1",
