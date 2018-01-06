@@ -1,0 +1,2 @@
+!function(e,n){"object"==typeof exports&&"undefined"!=typeof module?module.exports=n():"function"==typeof define&&define.amd?define(n):e.bridge=n()}(this,function(){"use strict";var e={getMACContent:function(e){!function(e){var n=e.api,t=e.method,i=e.args;console.info("在浏览器中不支持："+n+" 的 "+t+" 方法，传递的参数为：",i)}({api:"uc",method:"getMACContent",args:e})}},n=window.Bridge;return{hasBridge:function(){return!!n},require:function(t){return this.hasBridge()?{uc:n.require("sdp.uc")}[t]:{uc:e}[t]}}});
+//# sourceMappingURL=index.umd.js.map

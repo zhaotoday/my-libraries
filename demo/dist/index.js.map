@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sources":["../src/index.js"],"sourcesContent":["export default class SomeModule {\n  someFunction () {\n    console.log('Something.')\n  }\n}\n"],"names":["SomeModule","log"],"mappings":"oqBAAqBA,6HAETC,IAAI"}
