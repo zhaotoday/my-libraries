@@ -1,6 +1,6 @@
 {
-  "name": "some-lib",
-  "moduleName": "someLib",
+  "name": "some-module",
+  "moduleName": "SomeModule",
   "version": "0.0.1",
   "description": "demo",
   "main": "dist/index.js",
