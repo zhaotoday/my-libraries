@@ -10,6 +10,21 @@
     ]
   ],
   "plugins": [
-    "external-helpers"
+    "external-helpers",
+    [
+      "transform-react-jsx",
+      {
+        "pragma": "h"
+      }
+    ],
+    [
+      "transform-runtime",
+      {
+        "helpers": false,
+        "polyfill": false,
+        "regenerator": true,
+        "moduleName": "babel-runtime"
+      }
+    ]
   ]
 }

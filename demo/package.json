@@ -22,20 +22,6 @@
       }
     }
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zhaotoday/rollup.js.git"
-  },
-  "keywords": [
-    "npm",
-    "rollup"
-  ],
-  "author": "zhaojintian",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/zhaotoday/rollup.js/issues"
-  },
-  "homepage": "https://github.com/zhaotoday/rollup.js#readme",
   "devDependencies": {
     "better-npm-run": "^0.1.0"
   },

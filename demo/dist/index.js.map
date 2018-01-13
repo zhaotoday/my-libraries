@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sources":["../src/index.js"],"sourcesContent":["export default class SomeModule {\n  someFunction () {\n    console.log('Something.')\n  }\n}\n"],"names":["SomeModule","log"],"mappings":"oqBAAqBA,6HAETC,IAAI"}
+{"version":3,"file":"index.js","sources":["../src/index.js"],"sourcesContent":["import './styles/index.css'\r\n\r\nexport default class SomeModule {\r\n  someFunction () {\r\n    console.log('Something.')\r\n  }\r\n}\r\n"],"names":["log"],"mappings":"66MAIYA,IAAI"}
