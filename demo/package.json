@@ -1,6 +1,6 @@
 {
-  "name": "@sdp.nd/demo",
-  "moduleName": "SomeModule",
+  "name": "some-lib",
+  "moduleName": "someLib",
   "version": "0.0.1",
   "description": "demo",
   "main": "dist/index.js",

@@ -11,32 +11,32 @@ Rollup 是一个 JavaScript 模块打包器，可以将小块代码编译成大�
 ## 使用
 ```bash
 # JS 校验，在根目录下执行
-$ node_modules/.bin/eslint {lib}/src/**/*.js
+$ node_modules/.bin/eslint {some-lib}/src/**/*.js
 
 # CSS 校验，在根目录下执行
-$ node_modules/.bin/stylelint {lib}/src/**/*.css
+$ node_modules/.bin/stylelint {some-lib}/src/**/*.css
 
-# 开发、调试，在 {lib} 目录下执行
-$ cd {lib}
+# 开发、调试，在 {some-lib} 目录下执行
+$ cd {some-lib}
 $ npm run dev
 
-# 构建代码，在 {lib} 目录下执行
-$ cd {lib}
+# 构建代码，在 {some-lib} 目录下执行
+$ cd {some-lib}
 $ npm run build
 
 # 登录 npm
 $ npm login
 
-# 发布包，请注意，如果非首次发布，需要修改 package.json 的版本字段 version
+# 发布 {some-lib}，请注意，如果非首次发布，需要修改 package.json 的版本字段 version
 $ npm publish
 
-# 安装 {lib}
-$ npm install --save my-lib
+# 安装 {some-lib}
+$ npm install --save some-lib
 ```
 
 ```js
-// 引用 {lib}
-import {lib} from '{lib}'
+// 引用 {some-lib}
+import someLib from 'some-lib'
 ```
 
 ## 相关包
