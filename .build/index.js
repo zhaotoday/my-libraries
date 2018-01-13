@@ -12,21 +12,26 @@ const build = () => {
   // umd 需要把依赖包打进目标文件
   // cjs 需要将依赖包申明为外部依赖
   ['umd', 'cjs'].forEach(async format => {
-    const bundle = await rollup.rollup(Object.assign(
-      // 公用配置
-      {input: 'src/index.js', plugins, cache: caches[format]},
-      // cjs 独有配置
-      format === 'cjs' ? {external, output: globals} : null)
-    )
+    const isUMD = format === 'umd'
+    const inputOptions = {
+      input: 'src/index.js',
+      external: isUMD ? [] : external,
+      cache: caches[format],
+      plugins
+    }
+    const outputOptions = {
+      format,
+      globals: isUMD ? [] : globals,
+      sourcemap: true,
+      name: pkg.moduleName || pkg.name,
+      file: `dist/index${isUMD ? '.umd' : ''}.js`
+    }
+
+    const bundle = await rollup.rollup(inputOptions)
 
     caches[format] = bundle
 
-    await bundle.write({
-      format,
-      sourcemap: true,
-      name: pkg.moduleName || pkg.name,
-      file: `dist/index${format === 'umd' ? '.umd' : ''}.js`
-    })
+    await bundle.write(outputOptions)
 
     notice.success(`The ${format} format package built successfully!`)
   })
