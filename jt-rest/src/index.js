@@ -1,4 +1,4 @@
-import axios from 'axios'
+import axios from 'axios/dist/axios.min'
 
 /**
  * 基于 axios 的 RESTful HTTP 简单封装

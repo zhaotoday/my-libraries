@@ -25,5 +25,7 @@
   "devDependencies": {
     "better-npm-run": "^0.1.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "axios": "^0.17.1"
+  }
 }
