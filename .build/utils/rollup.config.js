@@ -29,7 +29,8 @@ const plugins = [,
   }),
   require('rollup-plugin-commonjs')(),
   require('rollup-plugin-babel')({
-    exclude: 'node_modules/**' // 仅仅转译我们的源码
+    exclude: 'node_modules/**',
+    runtimeHelpers: true
   }),
   require('rollup-plugin-uglify')()
 ]
