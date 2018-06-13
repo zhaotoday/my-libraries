@@ -1,8 +1,8 @@
 {
-  "name": "jt-rest",
-  "moduleName": "REST",
+  "name": "jt-storage",
+  "moduleName": "storage",
   "version": "0.0.1",
-  "description": "RESTful API",
+  "description": "localStorage",
   "main": "dist/index.js",
   "scripts": {
     "dev": "better-npm-run dev",
@@ -25,7 +25,5 @@
   "devDependencies": {
     "better-npm-run": "^0.1.0"
   },
-  "dependencies": {
-    "axios": "^0.17.1"
-  }
+  "dependencies": {}
 }
