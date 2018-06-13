@@ -1,7 +1,7 @@
 {
   "name": "jt-storage",
   "moduleName": "storage",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "localStorage",
   "main": "dist/index.js",
   "scripts": {
