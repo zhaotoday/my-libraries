@@ -1,7 +1,7 @@
 {
   "name": "mp-client",
   "moduleName": "mp",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "mp client js sdk",
   "main": "dist/index.js",
   "scripts": {
