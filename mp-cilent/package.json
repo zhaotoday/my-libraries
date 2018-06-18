@@ -1,0 +1,29 @@
+{
+  "name": "some-module",
+  "moduleName": "SomeModule",
+  "version": "0.0.1",
+  "description": "demo",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "better-npm-run dev",
+    "build": "better-npm-run build"
+  },
+  "betterScripts": {
+    "build": {
+      "command": "node ../.build",
+      "env": {
+        "BUILD": "production"
+      }
+    },
+    "dev": {
+      "command": "node ../.build",
+      "env": {
+        "BUILD": "development"
+      }
+    }
+  },
+  "devDependencies": {
+    "better-npm-run": "^0.1.0"
+  },
+  "dependencies": {}
+}
