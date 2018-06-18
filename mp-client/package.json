@@ -1,8 +1,8 @@
 {
-  "name": "some-module",
-  "moduleName": "SomeModule",
-  "version": "0.0.1",
-  "description": "demo",
+  "name": "mp-client",
+  "moduleName": "mp",
+  "version": "0.0.2",
+  "description": "mp client js sdk",
   "main": "dist/index.js",
   "scripts": {
     "dev": "better-npm-run dev",
