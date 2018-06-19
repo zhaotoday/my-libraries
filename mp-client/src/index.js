@@ -1,9 +1,7 @@
-import wepy from 'wepy'
+import wx from './wx'
 import utils from './utils'
 
-const $ = wepy
-
 export default {
-  $,
+  wx,
   utils
 }

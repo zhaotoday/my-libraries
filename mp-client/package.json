@@ -1,7 +1,7 @@
 {
   "name": "mp-client",
   "moduleName": "mp",
-  "version": "0.0.3",
+  "version": "0.0.15",
   "description": "mp client js sdk",
   "main": "dist/index.js",
   "scripts": {
@@ -25,5 +25,8 @@
   "devDependencies": {
     "better-npm-run": "^0.1.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "qs": "^6.5.2",
+    "wepy": "^1.6.0"
+  }
 }

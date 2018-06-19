@@ -1,9 +1,13 @@
 import consts from './consts'
 import Storage from './storage'
-import getPages from './getPages'
+import currentPages from './currentPages'
+import url from './url'
+import page from './page'
 
 export default {
   consts,
   Storage,
-  getPages
+  currentPages,
+  url,
+  page
 }
