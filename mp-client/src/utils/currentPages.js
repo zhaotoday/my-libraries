@@ -38,6 +38,6 @@ export default {
     return storage.get()
   },
   clearPages () {
-    storage.clear()
+    storage.remove()
   }
 }
