@@ -4,6 +4,7 @@ import currentPages from './currentPages'
 import url from './url'
 import page from './page'
 import time from './time'
+import component from './component'
 
 export default {
   consts,
@@ -11,5 +12,6 @@ export default {
   currentPages,
   url,
   page,
-  time
+  time,
+  component
 }
