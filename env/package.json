@@ -1,8 +1,8 @@
 {
-  "name": "mp-client",
-  "moduleName": "mp",
-  "version": "0.0.24",
-  "description": "a collection of utils for mini program",
+  "name": "jt-env",
+  "moduleName": "env",
+  "version": "0.0.1",
+  "description": "env",
   "main": "dist/index.js",
   "scripts": {
     "dev": "better-npm-run dev",

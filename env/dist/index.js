@@ -1,0 +1,2 @@
+"use strict";var ENVs={DEV:"DEV",TEST:"TEST",BETA:"BETA",PROD:"PROD"},index={_get:function(){var t=window.location.hostname;switch(t){case"127.0.0.1":case"localhost":return ENVs.DEV;default:return/\.test\.liruan\.cn$/.test(t)?ENVs.TEST:/\.beta\.liruan\.cn$/.test(t)?ENVs.BETA:(/\.prod\.liruan\.cn$/.test(t),ENVs.PROD)}},isDev:function(){return this._get()===ENVs.DEV},isTest:function(){return this._get()===ENVs.TEST},isBeta:function(){return this._get()===ENVs.BETA},isProd:function(){return this._get()===ENVs.PROD}};module.exports=index;
+//# sourceMappingURL=index.js.map
