@@ -1,8 +1,8 @@
 {
-  "name": "mp-client",
-  "moduleName": "mp",
-  "version": "0.0.25",
-  "description": "a collection of utils for mini program",
+  "name": "wx-bridge",
+  "moduleName": "wxb",
+  "version": "0.0.2",
+  "description": "bridge for mini program",
   "main": "dist/index.js",
   "scripts": {
     "dev": "better-npm-run dev",
