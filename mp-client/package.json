@@ -1,7 +1,7 @@
 {
   "name": "mp-client",
   "moduleName": "mp",
-  "version": "0.0.24",
+  "version": "0.0.25",
   "description": "a collection of utils for mini program",
   "main": "dist/index.js",
   "scripts": {
