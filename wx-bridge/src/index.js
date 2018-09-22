@@ -1,14 +1,16 @@
-import isMP from './isMP'
-import request from './request'
-import setStorageSync from './setStorageSync'
-import getStorageSync from './getStorageSync'
-import removeStorageSync from './removeStorageSync'
-import getSetting from './getSetting'
-import getUserInfo from './getUserInfo'
-import login from './login'
-import switchTab from './switchTab'
-import navigateTo from './navigateTo'
-import requestPayment from './requestPayment'
+import isMP from './apis/isMP'
+import request from './apis/request'
+import setStorageSync from './apis/setStorageSync'
+import getStorageSync from './apis/getStorageSync'
+import removeStorageSync from './apis/removeStorageSync'
+import getSetting from './apis/getSetting'
+import getUserInfo from './apis/getUserInfo'
+import login from './apis/login'
+import navigateTo from './apis/navigateTo'
+import redirectTo from './apis/redirectTo'
+import switchTab from './apis/switchTab'
+import reLaunch from './apis/reLaunch'
+import requestPayment from './apis/requestPayment'
 
 export default {
   isMP,
@@ -19,7 +21,9 @@ export default {
   getSetting,
   getUserInfo,
   login,
-  switchTab,
   navigateTo,
+  redirectTo,
+  switchTab,
+  reLaunch,
   requestPayment
 }
