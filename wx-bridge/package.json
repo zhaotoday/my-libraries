@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "dayjs": "^1.6.9",
+    "es6-promise": "^4.2.5",
     "qs": "^6.5.2"
   }
 }
