@@ -1,0 +1,32 @@
+{
+  "name": "mp-client",
+  "moduleName": "mp",
+  "version": "0.0.25",
+  "description": "a collection of utils for mini program",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "better-npm-run dev",
+    "build": "better-npm-run build"
+  },
+  "betterScripts": {
+    "build": {
+      "command": "node ../.build",
+      "env": {
+        "BUILD": "production"
+      }
+    },
+    "dev": {
+      "command": "node ../.build",
+      "env": {
+        "BUILD": "development"
+      }
+    }
+  },
+  "devDependencies": {
+    "better-npm-run": "^0.1.0"
+  },
+  "dependencies": {
+    "dayjs": "^1.6.9",
+    "qs": "^6.5.2"
+  }
+}
