@@ -1,7 +1,7 @@
 {
   "name": "wx-bridge",
   "moduleName": "wxb",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "bridge for mini program",
   "main": "dist/index.js",
   "scripts": {
@@ -25,9 +25,5 @@
   "devDependencies": {
     "better-npm-run": "^0.1.0"
   },
-  "dependencies": {
-    "dayjs": "^1.6.9",
-    "es6-promise": "^4.2.5",
-    "qs": "^6.5.2"
-  }
+  "dependencies": {}
 }

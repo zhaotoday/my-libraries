@@ -1,5 +1,3 @@
-import Promise from 'es6-promise'
-
 export default {
   promisify (fn, options) {
     return new Promise((resolve, reject) => {
