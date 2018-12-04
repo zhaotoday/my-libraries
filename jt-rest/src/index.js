@@ -52,7 +52,7 @@ export default class REST {
    * @return {Object}
    */
   request (method = 'GET', options = {}) {
-    const {id = '', query = null, body = null} = options
+    const { id = '', query = null, body = null } = options
     let url = this.version ? `/${this.version}/${this.path}` : `/${this.path}`
 
     if (id) {
@@ -64,15 +64,24 @@ export default class REST {
       url = `${url}${this.toURL(query)}`
     }
 
-    return new Promise((resolve, reject) => {
-      axios({
+    return wx
+      ? new Promise((resolve, reject) => {
+        wx.request({
+          url: `${this.baseURL}/${url}`,
+          header: this.headers,
+          method,
+          data: body,
+          success: resolve,
+          fail: reject
+        })
+      })
+      : axios({
         baseURL: this.baseURL,
         headers: this.headers,
         method,
         url,
         data: body
-      }).then(resolve).catch(reject)
-    })
+      })
   }
 
   /**
