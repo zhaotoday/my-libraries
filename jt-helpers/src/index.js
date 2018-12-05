@@ -57,7 +57,9 @@ export default {
     return async options => {
       before && await before()
 
-      return res ? res(fn(req(options))) : fn(req(options))
+      const fnRes = req ? fn(req(options)) : fn(options)
+
+      return res ? res(fnRes) : fnRes
     }
   }
 }
