@@ -11,6 +11,14 @@ import redirectTo from './apis/redirectTo'
 import switchTab from './apis/switchTab'
 import reLaunch from './apis/reLaunch'
 import requestPayment from './apis/requestPayment'
+import showActionSheet from './apis/showActionSheet'
+import showLoading from './apis/showLoading'
+import showModal from './apis/showModal'
+import showToast from './apis/showToast'
+import hideLoading from './apis/hideLoading'
+import hideToast from './apis/hideToast'
+import getImageInfo from './apis/getImageInfo'
+import createCanvasContext from './apis/createCanvasContext'
 
 export default {
   isMP,
@@ -25,5 +33,13 @@ export default {
   redirectTo,
   switchTab,
   reLaunch,
-  requestPayment
+  requestPayment,
+  showActionSheet,
+  showLoading,
+  showModal,
+  showToast,
+  hideLoading,
+  hideToast,
+  getImageInfo,
+  createCanvasContext
 }
