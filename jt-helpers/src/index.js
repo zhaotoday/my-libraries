@@ -48,5 +48,16 @@ export default {
     return new Promise(resolve => {
       setTimeout(resolve, n)
     })
+  },
+  /**
+   * 拦截
+   * @returns {Promise}
+   */
+  intercept (fn, { before, req, res } = {}) {
+    return async options => {
+      before && await before()
+
+      return res ? res(fn(req(options))) : fn(req(options))
+    }
   }
 }
