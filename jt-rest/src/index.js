@@ -67,11 +67,17 @@ export default class REST {
     return wx
       ? new Promise((resolve, reject) => {
         wx.request({
-          url: `${this.baseURL}/${url}`,
+          url: this.baseURL + url,
           header: this.headers,
           method,
           data: body,
-          success: resolve,
+          success: res => {
+            if ((res.statusCode + '').charAt(0) === '2') {
+              resolve(res)
+            } else {
+              reject(res)
+            }
+          },
           fail: reject
         })
       })
