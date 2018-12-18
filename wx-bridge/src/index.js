@@ -19,6 +19,7 @@ import hideLoading from './apis/hideLoading'
 import hideToast from './apis/hideToast'
 import getImageInfo from './apis/getImageInfo'
 import createCanvasContext from './apis/createCanvasContext'
+import setClipboardData from './apis/setClipboardData'
 
 export default {
   isMP,
@@ -41,5 +42,6 @@ export default {
   hideLoading,
   hideToast,
   getImageInfo,
-  createCanvasContext
+  createCanvasContext,
+  setClipboardData
 }
