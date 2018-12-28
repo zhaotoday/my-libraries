@@ -53,13 +53,13 @@ export default {
    * 拦截
    * @returns {Promise}
    */
-  intercept (fn, { before, req, res } = {}) {
+  intercept (fn, { beforeCall, req, res } = {}) {
     return async options => {
-      before && await before()
+      const fnOptions = req ? req(options) : options
 
-      const fnRes = req ? fn(req(options)) : fn(options)
+      beforeCall && await beforeCall(fnOptions)
 
-      return res ? res(fnRes) : fnRes
+      return res ? res(fn(fnOptions)) : fn(fnOptions)
     }
   }
 }
