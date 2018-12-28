@@ -1,7 +1,7 @@
 {
   "name": "jt-time",
   "moduleName": "time",
-  "version": "0.0.2",
+  "version": "0.0.7",
   "description": "env",
   "main": "dist/index.js",
   "scripts": {
