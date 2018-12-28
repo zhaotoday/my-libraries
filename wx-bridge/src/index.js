@@ -20,6 +20,9 @@ import hideToast from './apis/hideToast'
 import getImageInfo from './apis/getImageInfo'
 import createCanvasContext from './apis/createCanvasContext'
 import setClipboardData from './apis/setClipboardData'
+import makePhoneCall from './apis/makePhoneCall'
+import getLocation from './apis/getLocation'
+import openLocation from './apis/openLocation'
 
 export default {
   isMP,
@@ -43,5 +46,8 @@ export default {
   hideToast,
   getImageInfo,
   createCanvasContext,
-  setClipboardData
+  setClipboardData,
+  makePhoneCall,
+  getLocation,
+  openLocation
 }
