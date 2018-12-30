@@ -1,0 +1,11 @@
+{
+  "name": "jt-pinyin",
+  "version": "0.0.2",
+  "description": "pinyin",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "author": "zhaojintian",
+  "license": "ISC"
+}
