@@ -14,6 +14,9 @@ export default {
       case 'localhost':
         return ENVs.DEV
       default:
+        if (/\.dev\.liruan\.cn$/.test(hostname)) {
+          return ENVs.DEV
+        }
         if (/\.test\.liruan\.cn$/.test(hostname)) {
           return ENVs.TEST
         }
