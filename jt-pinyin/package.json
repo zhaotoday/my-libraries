@@ -1,11 +1,29 @@
 {
   "name": "jt-pinyin",
-  "version": "0.0.2",
-  "description": "pinyin",
-  "main": "index.js",
+  "moduleName": "Pinyin",
+  "version": "0.0.10",
+  "description": "",
+  "main": "dist/index.js",
   "scripts": {
-    "test": ""
+    "dev": "better-npm-run dev",
+    "build": "better-npm-run build"
   },
-  "author": "zhaojintian",
-  "license": "ISC"
+  "betterScripts": {
+    "build": {
+      "command": "node ../.build",
+      "env": {
+        "BUILD": "production"
+      }
+    },
+    "dev": {
+      "command": "node ../.build",
+      "env": {
+        "BUILD": "development"
+      }
+    }
+  },
+  "devDependencies": {
+    "better-npm-run": "^0.1.0"
+  },
+  "dependencies": {}
 }
