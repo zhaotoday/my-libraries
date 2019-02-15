@@ -1,4 +1,4 @@
-import axios from 'axios/dist/axios.min'
+import axios from 'axios'
 
 /**
  * 基于 axios 的 RESTful HTTP 简单封装
@@ -64,7 +64,7 @@ export default class REST {
       url = `${url}${this.toURL(query)}`
     }
 
-    return wx
+    return typeof wx !== 'undefined'
       ? new Promise((resolve, reject) => {
         wx.request({
           url: this.baseURL + url,
