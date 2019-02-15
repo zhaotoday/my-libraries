@@ -23,6 +23,7 @@ import setClipboardData from './apis/setClipboardData'
 import makePhoneCall from './apis/makePhoneCall'
 import getLocation from './apis/getLocation'
 import openLocation from './apis/openLocation'
+import scanCode from './apis/scanCode'
 
 export default {
   isMP,
@@ -49,5 +50,6 @@ export default {
   setClipboardData,
   makePhoneCall,
   getLocation,
-  openLocation
+  openLocation,
+  scanCode
 }
