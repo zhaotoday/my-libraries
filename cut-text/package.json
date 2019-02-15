@@ -1,0 +1,15 @@
+{
+  "name": "cut-text",
+  "version": "0.0.2",
+  "description": "cut text",
+  "main": "src/index.js",
+  "scripts": {},
+  "keywords": [
+    "cut text"
+  ],
+  "author": "zhaojintian",
+  "license": "ISC",
+  "dependencies": {
+    "striptags": "^3.1.1"
+  }
+}
