@@ -1,6 +1,6 @@
 {
   "name": "jt-kindeditor",
-  "version": "0.0.2",
+  "version": "0.0.6",
   "filename": "kindeditor",
   "repository": "kindsoft/kindeditor",
   "main": "kindeditor-all-min.js",

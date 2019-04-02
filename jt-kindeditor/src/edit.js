@@ -62,7 +62,7 @@ function _getInitHtml(themesPath, bodyClass, cssPath, cssData) {
 		'	border:1px dotted #AAA;',
 		'	font-size:0;',
 		'	height:2px;',
-		'}',
+		'}img{max-width:100%;}',
 		'</style>'
 	];
 	if (!_isArray(cssPath)) {

@@ -5,7 +5,7 @@
 * @author Roddy <luolonghao@gmail.com>
 * @website http://www.kindsoft.net/
 * @licence http://www.kindsoft.net/license.php
-* @version 0.0.1 (2019-04-02)
+* @version 0.0.5 (2019-04-02)
 *******************************************************************************/
 (function (window, undefined) {
 	if (window.KindEditor) {
@@ -19,7 +19,7 @@ if (!window.console) {
 if (!console.log) {
 	console.log = function () {};
 }
-var _VERSION = '0.0.1 (2019-04-02)',
+var _VERSION = '0.0.5 (2019-04-02)',
 	_ua = navigator.userAgent.toLowerCase(),
 	_IE = _ua.indexOf('msie') > -1 && _ua.indexOf('opera') == -1,
 	_NEWIE = _ua.indexOf('msie') == -1 && _ua.indexOf('trident') > -1,
@@ -271,7 +271,7 @@ K.options = {
 	],
 	noDisableItems : ['source', 'fullscreen'],
 	colorTable : [
-		['#E53333', '#E56600', '#FF9900', '#64451D', '#DFC5A4', '#FFE500'],
+		['#39bab8', '#E56600', '#FF9900', '#64451D', '#DFC5A4', '#FFE500'],
 		['#009900', '#006600', '#99BB00', '#B8D100', '#60D978', '#00D5FF'],
 		['#337FE5', '#003399', '#4C33E5', '#9933E5', '#CC33E5', '#EE33EE'],
 		['#FFFFFF', '#CCCCCC', '#999999', '#666666', '#333333', '#000000']
@@ -3611,7 +3611,7 @@ function _getInitHtml(themesPath, bodyClass, cssPath, cssData) {
 		'	border:1px dotted #AAA;',
 		'	font-size:0;',
 		'	height:2px;',
-		'}',
+		'}img{max-width:100%;}',
 		'</style>'
 	];
 	if (!_isArray(cssPath)) {
@@ -4113,7 +4113,7 @@ _extend(KColorPicker, KWidget, {
 		options.z = options.z || 811213;
 		KColorPicker.parent.init.call(self, options);
 		var colors = options.colors || [
-			['#E53333', '#E56600', '#FF9900', '#64451D', '#DFC5A4', '#FFE500'],
+			['#39bab8', '#E56600', '#FF9900', '#64451D', '#DFC5A4', '#FFE500'],
 			['#009900', '#006600', '#99BB00', '#B8D100', '#60D978', '#00D5FF'],
 			['#337FE5', '#003399', '#4C33E5', '#9933E5', '#CC33E5', '#EE33EE'],
 			['#FFFFFF', '#CCCCCC', '#999999', '#666666', '#333333', '#000000']

@@ -9,7 +9,7 @@ _extend(KColorPicker, KWidget, {
 		options.z = options.z || 811213;
 		KColorPicker.parent.init.call(self, options);
 		var colors = options.colors || [
-			['#E53333', '#E56600', '#FF9900', '#64451D', '#DFC5A4', '#FFE500'],
+			['#39bab8', '#E56600', '#FF9900', '#64451D', '#DFC5A4', '#FFE500'],
 			['#009900', '#006600', '#99BB00', '#B8D100', '#60D978', '#00D5FF'],
 			['#337FE5', '#003399', '#4C33E5', '#9933E5', '#CC33E5', '#EE33EE'],
 			['#FFFFFF', '#CCCCCC', '#999999', '#666666', '#333333', '#000000']
