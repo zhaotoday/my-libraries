@@ -2,5 +2,8 @@
   "extends": "standard",
   "rules": {
     "camelcase": 0
+  },
+  "globals": {
+    "wx": true
   }
 }
