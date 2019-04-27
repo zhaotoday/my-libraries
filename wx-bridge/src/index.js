@@ -5,6 +5,7 @@ import getStorageSync from './apis/getStorageSync'
 import removeStorageSync from './apis/removeStorageSync'
 import getSetting from './apis/getSetting'
 import getUserInfo from './apis/getUserInfo'
+import checkSession from './apis/checkSession'
 import login from './apis/login'
 import navigateTo from './apis/navigateTo'
 import redirectTo from './apis/redirectTo'
@@ -34,6 +35,7 @@ export default {
   removeStorageSync,
   getSetting,
   getUserInfo,
+  checkSession,
   login,
   navigateTo,
   redirectTo,
