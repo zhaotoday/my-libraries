@@ -24,6 +24,7 @@ import makePhoneCall from './apis/makePhoneCall'
 import getLocation from './apis/getLocation'
 import openLocation from './apis/openLocation'
 import scanCode from './apis/scanCode'
+import qy from './apis/qy'
 
 export default {
   isMP,
@@ -51,5 +52,6 @@ export default {
   makePhoneCall,
   getLocation,
   openLocation,
-  scanCode
+  scanCode,
+  qy
 }
