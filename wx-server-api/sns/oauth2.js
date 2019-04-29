@@ -3,7 +3,7 @@ const axios = require('axios')
 module.exports = config => {
   return {
     async getAccessToken ({ code }) {
-      const { APP_ID, SECRET } = config
+      const { APP_ID, SECRET } = config.OA
       const { data } = await axios.request({
         method: 'GET',
         url: 'https://api.weixin.qq.com/sns/oauth2/access_token',
