@@ -1,3 +1,3 @@
 import helpers from '../utils/helpers'
 
-export default options => helpers.qy.promisify('navigateBack', options)
+export default options => helpers.promisify('navigateBack', options)

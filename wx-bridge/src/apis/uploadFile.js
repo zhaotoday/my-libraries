@@ -1,3 +1,3 @@
 import helpers from '../utils/helpers'
 
-export default options => helpers.qy.promisify('uploadFile', options)
+export default options => helpers.promisify('uploadFile', options)
