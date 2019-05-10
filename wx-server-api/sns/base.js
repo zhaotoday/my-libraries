@@ -1,10 +1,10 @@
 const axios = require('axios')
 
-export default config => {
+module.exports = config => {
   return {
     async getUserInfo ({ code }) {
       const oauth2 = require('./oauth2')(config)
-      const { access_token, openid } = oauth2.getAccessToken({ code })
+      const { access_token, openid } = await oauth2.getAccessToken({ code })
 
       const { data } = await axios.request({
         method: 'GET',
