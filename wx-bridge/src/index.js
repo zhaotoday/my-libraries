@@ -25,6 +25,9 @@ import makePhoneCall from './apis/makePhoneCall'
 import getLocation from './apis/getLocation'
 import openLocation from './apis/openLocation'
 import scanCode from './apis/scanCode'
+import chooseImage from './apis/chooseImage'
+import uploadFile from './apis/uploadFile'
+import navigateBack from './apis/navigateBack'
 import qy from './apis/qy'
 
 export default {
@@ -55,5 +58,8 @@ export default {
   getLocation,
   openLocation,
   scanCode,
+  chooseImage,
+  uploadFile,
+  navigateBack,
   qy
 }
