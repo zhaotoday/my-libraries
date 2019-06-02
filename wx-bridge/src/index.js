@@ -28,6 +28,8 @@ import scanCode from './apis/scanCode'
 import chooseImage from './apis/chooseImage'
 import uploadFile from './apis/uploadFile'
 import navigateBack from './apis/navigateBack'
+import downloadFile from './apis/downloadFile'
+import saveImageToPhotosAlbum from './apis/saveImageToPhotosAlbum'
 import qy from './apis/qy'
 
 export default {
@@ -61,5 +63,7 @@ export default {
   chooseImage,
   uploadFile,
   navigateBack,
+  downloadFile,
+  saveImageToPhotosAlbum,
   qy
 }
