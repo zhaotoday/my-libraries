@@ -30,6 +30,7 @@ import uploadFile from './apis/uploadFile'
 import navigateBack from './apis/navigateBack'
 import downloadFile from './apis/downloadFile'
 import saveImageToPhotosAlbum from './apis/saveImageToPhotosAlbum'
+import setNavigationBarTitle from './apis/setNavigationBarTitle'
 import qy from './apis/qy'
 
 export default {
@@ -65,5 +66,6 @@ export default {
   navigateBack,
   downloadFile,
   saveImageToPhotosAlbum,
+  setNavigationBarTitle,
   qy
 }

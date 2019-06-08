@@ -1,7 +1,7 @@
 {
   "name": "wx-bridge",
   "moduleName": "wxb",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "description": "bridge for mini program",
   "main": "dist/index.js",
   "scripts": {
