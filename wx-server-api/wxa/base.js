@@ -21,6 +21,7 @@ module.exports = config => {
 
       const { data } = await axios.request({
         method: 'POST',
+        responseType: 'arraybuffer',
         url: `https://api.weixin.qq.com/wxa/getwxacodeunlimit?access_token=${access_token}`,
         data: {
           scene,
