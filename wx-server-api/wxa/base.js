@@ -8,26 +8,27 @@ module.exports = config => {
         page,
         width = 430,
         auto_color = false,
-        line_coloris_hyaline = {
+        line_color = {
           'r': 0,
           'g': 0,
           'b': 0
-        }
-      }
+        },
+        is_hyaline = false
+      } = {}
     ) {
       const cgi = require('../cgi/base')(config)
       const { access_token } = await cgi.getAccessToken()
 
       const { data } = await axios.request({
-        method: 'GET',
-        url: 'https://api.weixin.qq.com/wxa/getwxacodeunlimit',
-        params: {
-          access_token,
+        method: 'POST',
+        url: `https://api.weixin.qq.com/wxa/getwxacodeunlimit?access_token=${access_token}`,
+        data: {
           scene,
           page,
           width,
           auto_color,
-          line_coloris_hyaline
+          line_color,
+          is_hyaline
         }
       })
 
