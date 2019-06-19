@@ -1,5 +1,6 @@
 module.exports = config => ({
   corp: require('./corp')(config),
   sns: require('./sns')(config),
-  wxa: require('./wxa')(config)
+  wxa: require('./wxa')(config),
+  cgi: require('./cgi')(config)
 })
