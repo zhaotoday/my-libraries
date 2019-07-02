@@ -1,1 +1,1 @@
-export default wx.reomveStorageSync
+export default wx.removeStorageSync
