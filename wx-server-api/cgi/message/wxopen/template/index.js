@@ -14,7 +14,7 @@ module.exports = config => {
     ) {
       const cgi = require('../../../base')(config)
       const { access_token } = await cgi.getAccessToken()
-      const { data } = await axios.request({
+      const res = await axios.request({
         method: 'POST',
         url: 'https://api.weixin.qq.com/cgi-bin/message/wxopen/template/send',
         params: { access_token },
@@ -28,7 +28,7 @@ module.exports = config => {
         }
       })
 
-      return data
+      return res.data
     }
   }
 }
