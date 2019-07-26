@@ -12,5 +12,8 @@ export default {
   },
   format (time, formatter) {
     return dayjs(time).format(formatter)
+  },
+  add (time, num, unit) {
+    return dayjs(time).add(num, unit)
   }
 }
