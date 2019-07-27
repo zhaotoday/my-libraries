@@ -26,6 +26,7 @@ import getLocation from './apis/getLocation'
 import openLocation from './apis/openLocation'
 import scanCode from './apis/scanCode'
 import chooseImage from './apis/chooseImage'
+import chooseVideo from './apis/chooseVideo'
 import uploadFile from './apis/uploadFile'
 import navigateBack from './apis/navigateBack'
 import downloadFile from './apis/downloadFile'
@@ -63,6 +64,7 @@ export default {
   openLocation,
   scanCode,
   chooseImage,
+  chooseVideo,
   uploadFile,
   navigateBack,
   downloadFile,
