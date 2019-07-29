@@ -1,1 +1,3 @@
-export default wx.previewImage
+import helpers from '../utils/helpers'
+
+export default options => helpers.promisify('previewImage', options)
