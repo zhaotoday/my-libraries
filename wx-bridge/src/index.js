@@ -33,6 +33,7 @@ import downloadFile from './apis/downloadFile'
 import saveImageToPhotosAlbum from './apis/saveImageToPhotosAlbum'
 import setNavigationBarTitle from './apis/setNavigationBarTitle'
 import getSystemInfoSync from './apis/getSystemInfoSync'
+import previewImage from './apis/previewImage'
 import qy from './apis/qy'
 
 export default {
@@ -71,5 +72,6 @@ export default {
   saveImageToPhotosAlbum,
   setNavigationBarTitle,
   getSystemInfoSync,
+  previewImage,
   qy
 }
