@@ -1,7 +1,7 @@
 {
   "name": "jt-rest",
   "moduleName": "REST",
-  "version": "0.0.8",
+  "version": "0.0.10",
   "description": "RESTful API",
   "main": "dist/index.js",
   "scripts": {
@@ -26,6 +26,6 @@
     "better-npm-run": "^0.1.0"
   },
   "dependencies": {
-    "axios": "^0.17.1"
+    "axios": "^0.19.0"
   }
 }

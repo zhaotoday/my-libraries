@@ -52,7 +52,7 @@ export default class REST {
    * @return {Object}
    */
   request (method = 'GET', options = {}) {
-    const { id = '', query = null, body = null } = options
+    const { id = '', query = null, body = null, timeout = 5000 } = options
     let url = this.version ? `/${this.version}/${this.path}` : `/${this.path}`
 
     if (id) {
@@ -64,7 +64,7 @@ export default class REST {
       url = `${url}${this.toURL(query)}`
     }
 
-    return typeof wx !== 'undefined'
+    return typeof wx !== 'undefined' && wx.request
       ? new Promise((resolve, reject) => {
         wx.request({
           url: this.baseURL + url,
@@ -85,6 +85,7 @@ export default class REST {
         baseURL: this.baseURL,
         headers: this.headers,
         method,
+        timeout,
         url,
         data: body
       })
