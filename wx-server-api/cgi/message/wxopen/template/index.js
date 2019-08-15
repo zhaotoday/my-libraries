@@ -7,7 +7,7 @@ module.exports = config => {
         touser,
         template_id,
         page,
-        from_id,
+        form_id,
         data,
         emphasis_keyword
       }
@@ -22,7 +22,7 @@ module.exports = config => {
           touser,
           template_id,
           page,
-          from_id,
+          form_id,
           data,
           emphasis_keyword
         }
