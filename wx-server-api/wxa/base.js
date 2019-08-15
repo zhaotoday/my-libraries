@@ -34,6 +34,28 @@ module.exports = config => {
       })
 
       return data
+    },
+    async imgSecCheck ({ media }) {
+      const cgi = require('../cgi/base')(config)
+      const { access_token } = await cgi.getAccessToken()
+      const { data } = await axios.request({
+        method: 'POST',
+        url: ` https://api.weixin.qq.com/wxa/img_sec_check?access_token=${access_token}`,
+        data: { media }
+      })
+
+      return data
+    },
+    async msgSecCheck ({ content }) {
+      const cgi = require('../cgi/base')(config)
+      const { access_token } = await cgi.getAccessToken()
+      const { data } = await axios.request({
+        method: 'POST',
+        url: ` https://api.weixin.qq.com/wxa/msg_sec_check?access_token=${access_token}`,
+        data: { content }
+      })
+
+      return data
     }
   }
 }
