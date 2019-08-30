@@ -109,7 +109,7 @@ export default class REST {
    * @param {string} [path=''] 路劲
    */
   addPath (path = '') {
-    this.path = `${this.path}/${path}`
+    this.path = this.path ? `${this.path}/${path}` : path
 
     return this
   }
