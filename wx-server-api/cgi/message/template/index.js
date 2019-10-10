@@ -11,7 +11,7 @@ module.exports = config => {
         data
       }
     ) {
-      const cgi = require('../../../base')(config)
+      const cgi = require('../../base')(config)
       const { access_token } = await cgi.getAccessToken()
       const res = await axios.request({
         method: 'POST',
