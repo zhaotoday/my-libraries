@@ -1,5 +1,5 @@
 {
-  "name": "get-wx-jssdk-config",
+  "name": "wx-jssdk-config",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
