@@ -9,5 +9,6 @@
   "author": "zhaojintian",
   "license": "ISC",
   "dependencies": {
+    "crypto": "^1.0.1"
   }
 }
