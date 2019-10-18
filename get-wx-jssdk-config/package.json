@@ -1,0 +1,13 @@
+{
+  "name": "get-wx-jssdk-config",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "author": "zhaojintian",
+  "license": "ISC",
+  "dependencies": {
+  }
+}
