@@ -33,7 +33,7 @@ function raw (args) {
   return string
 }
 
-module.exports = ({ appid, jsapi_ticket, url }) => {
+function getConfig ({ appid, jsapi_ticket, url }) {
   var ret = {
     jsapi_ticket: jsapi_ticket,
     nonceStr: createNonceStr(),
@@ -45,3 +45,5 @@ module.exports = ({ appid, jsapi_ticket, url }) => {
   ret.appId = appid
   return ret
 }
+
+module.exports = { getConfig }
