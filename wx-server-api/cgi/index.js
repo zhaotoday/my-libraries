@@ -6,5 +6,6 @@ module.exports = config => ({
       template: require('./message/wxopen/template')(config)
     }
   },
-  ticket: require('./ticket')(config)
+  ticket: require('./ticket')(config),
+  user: require('./user')(config)
 })
