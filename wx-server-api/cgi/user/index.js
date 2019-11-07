@@ -10,7 +10,7 @@ module.exports = config => {
         url: 'https://api.weixin.qq.com/cgi-bin/user/info',
         params: {
           access_token,
-          openId,
+          openid: openId,
           lang: 'zh_CN'
         }
       })
