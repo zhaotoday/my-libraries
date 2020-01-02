@@ -1,18 +1,7 @@
 export default {
-  /**
-   * 判断是否为空
-   * @param {string} value 字符串
-   * @return {boolean}
-   */
   isEmpty (value) {
     return value === null || value === undefined || value.trim() === ''
   },
-
-  /**
-   * key mirror
-   * @param {Object} obj 对象
-   * @return {Object}
-   */
   keyMirror (obj) {
     let ret = {}
     let key
@@ -27,32 +16,17 @@ export default {
 
     return ret
   },
-
-  /**
-   * 载入 JS 文件
-   * @param {string} url JS URL
-   */
   loadScript (url) {
     const httpReq = new window.XMLHttpRequest()
 
     httpReq.open('GET', url, true)
     httpReq.send(null)
   },
-
-  /**
-   * 等待 n 毫秒
-   * @param {string} n 毫秒数
-   * @returns {Promise}
-   */
   sleep (n) {
     return new Promise(resolve => {
       setTimeout(resolve, n)
     })
   },
-  /**
-   * 拦截
-   * @returns {Promise}
-   */
   intercept (fn, { beforeCall, req, res } = {}) {
     return async options => {
       const fnOptions = req ? req(options) : options
@@ -61,5 +35,18 @@ export default {
 
       return res ? res(fn(fnOptions)) : fn(fnOptions)
     }
+  },
+  getItem (items, key, val) {
+    return items && items.length
+      ? (items.find(item => item[key] === val) || {})
+      : {}
+  },
+  encryptPhoneNumber (phoneNumber) {
+    return phoneNumber
+      ? `${phoneNumber.substring(0, 3)}****${phoneNumber.substring(8, 11)}`
+      : ''
+  },
+  deepCopy (obj) {
+    return JSON.parse(JSON.stringify(obj))
   }
 }
