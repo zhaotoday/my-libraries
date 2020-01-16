@@ -36,6 +36,7 @@ import getSystemInfoSync from './apis/getSystemInfoSync'
 import previewImage from './apis/previewImage'
 import openSetting from './apis/openSetting'
 import chooseLocation from './apis/chooseLocation'
+import chooseMessageFile from './apis/chooseMessageFile'
 import qy from './apis/qy'
 
 export default {
@@ -77,5 +78,6 @@ export default {
   previewImage,
   openSetting,
   chooseLocation,
+  chooseMessageFile,
   qy
 }
