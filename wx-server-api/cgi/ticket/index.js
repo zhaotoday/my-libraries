@@ -1,15 +1,13 @@
 const axios = require('axios')
 
-module.exports = config => {
+module.exports = () => {
   return {
-    async getTicket () {
-      const cgi = require('../base')(config)
-      const { access_token } = await cgi.getAccessToken()
+    async getTicket ({ accessToken }) {
       const { data } = await axios.request({
         method: 'POST',
         url: 'https://api.weixin.qq.com/cgi-bin/ticket/getticket',
         params: {
-          access_token,
+          access_token: accessToken,
           type: 'jsapi'
         }
       })

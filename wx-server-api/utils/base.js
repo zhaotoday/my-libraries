@@ -1,9 +1,9 @@
 const WXBizDataCrypt = require('../lib/WXBizDataCrypt')
 
-module.exports = () => {
+module.exports = config => {
   return {
     getDecryptedData ({ sessionKey, encryptedData, iv }) {
-      return new WXBizDataCrypt(this.appid, sessionKey).decryptData(
+      return new WXBizDataCrypt(config.oa.appId, sessionKey).decryptData(
         encryptedData, iv)
     }
   }
