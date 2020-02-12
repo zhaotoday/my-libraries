@@ -4,6 +4,7 @@ module.exports = config => {
   return {
     async getWXACodeUnLimit (
       {
+        accessToken,
         scene,
         page,
         width = 430,
@@ -16,13 +17,11 @@ module.exports = config => {
         is_hyaline = false
       } = {}
     ) {
-      const cgi = require('../cgi/base')(config)
-      const { access_token } = await cgi.getAccessToken()
-
       const { data } = await axios.request({
         method: 'POST',
         responseType: 'arraybuffer',
-        url: `https://api.weixin.qq.com/wxa/getwxacodeunlimit?access_token=${access_token}`,
+        url: 'https://api.weixin.qq.com/wxa/getwxacodeunlimit',
+        params: { access_token: accessToken },
         data: {
           scene,
           page,
@@ -35,23 +34,21 @@ module.exports = config => {
 
       return data
     },
-    async imgSecCheck ({ media }) {
-      const cgi = require('../cgi/base')(config)
-      const { access_token } = await cgi.getAccessToken()
+    async imgSecCheck ({ accessToken, media }) {
       const { data } = await axios.request({
         method: 'POST',
-        url: ` https://api.weixin.qq.com/wxa/img_sec_check?access_token=${access_token}`,
+        url: 'https://api.weixin.qq.com/wxa/img_sec_check',
+        params: { access_token: accessToken },
         data: { media }
       })
 
       return data
     },
-    async msgSecCheck ({ content }) {
-      const cgi = require('../cgi/base')(config)
-      const { access_token } = await cgi.getAccessToken()
+    async msgSecCheck ({ accessToken, content }) {
       const { data } = await axios.request({
         method: 'POST',
-        url: ` https://api.weixin.qq.com/wxa/msg_sec_check?access_token=${access_token}`,
+        url: 'https://api.weixin.qq.com/wxa/msg_sec_check',
+        params: { access_token: accessToken },
         data: { content }
       })
 

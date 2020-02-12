@@ -14,6 +14,21 @@ module.exports = config => {
       })
 
       return data
+    },
+    async codeToSession ({ code }) {
+      const { appId, secret } = config.mp
+      const { data } = await axios.request({
+        method: 'GET',
+        url: 'https://api.weixin.qq.com/sns/jscode2session',
+        params: {
+          appid: appId,
+          secret: secret,
+          js_code: code,
+          grant_type: 'authorization_code'
+        }
+      })
+
+      return data
     }
   }
 }
