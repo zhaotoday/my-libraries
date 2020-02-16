@@ -43,7 +43,7 @@ export default {
   },
   encryptPhoneNumber (phoneNumber) {
     return phoneNumber
-      ? `${phoneNumber.substring(0, 3)}****${phoneNumber.substring(8, 11)}`
+      ? `${phoneNumber.substring(0, 3)}****${phoneNumber.substring(7, 11)}`
       : ''
   },
   deepCopy (obj) {
