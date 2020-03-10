@@ -38,6 +38,7 @@ import openSetting from './apis/openSetting'
 import chooseLocation from './apis/chooseLocation'
 import chooseMessageFile from './apis/chooseMessageFile'
 import saveFile from './apis/saveFile'
+import openDocument from './apis/openDocument'
 import qy from './apis/qy'
 
 export default {
@@ -81,5 +82,6 @@ export default {
   chooseLocation,
   chooseMessageFile,
   saveFile,
+  openDocument,
   qy
 }
