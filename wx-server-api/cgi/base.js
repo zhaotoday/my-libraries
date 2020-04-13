@@ -3,7 +3,7 @@ const axios = require('axios')
 module.exports = config => {
   return {
     async getAccessToken () {
-      const { appId, secret } = config.MP || config.OA
+      const { appId, secret } = config.mp || config.oa
       const { data } = await axios.request({
         method: 'GET',
         url: 'https://api.weixin.qq.com/cgi-bin/token',
