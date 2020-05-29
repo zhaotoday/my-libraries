@@ -1,0 +1,15 @@
+{
+  "name": "tencent-cloud-api",
+  "version": "0.0.6",
+  "description": "tencent cloud api",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "author": "zhaojintian",
+  "license": "ISC",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "querystring": "^0.2.0"
+  }
+}
