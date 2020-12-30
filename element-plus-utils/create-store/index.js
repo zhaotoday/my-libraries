@@ -21,8 +21,8 @@ export default ({
   };
 
   types = helpers.keyMirror({
-    GET_LIST: null,
-    GET_DETAIL: null,
+    GetList: null,
+    GetDetail: null,
     ...types
   });
 

@@ -2,7 +2,7 @@ export default ({ types, Model }) => {
   return {
     async getList({ commit }, { showLoading, showError, query }) {
       const { data } = await new Model().GET({ showLoading, showError, query });
-      commit(types.GET_LIST, { data });
+      commit(types.GetList, { data });
       return data;
     },
 
@@ -13,7 +13,7 @@ export default ({ types, Model }) => {
         id,
         query
       });
-      commit(types.GET_DETAIL, { data });
+      commit(types.GetDetail, { data });
       return data;
     },
 
