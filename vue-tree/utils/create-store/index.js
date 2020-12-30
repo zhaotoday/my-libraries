@@ -3,7 +3,7 @@ import getActions from "./actions";
 import getMutations from "./mutations";
 import helpers from "jt-helpers";
 
-export const createStore = ({
+export default ({
   Model = null,
   state = {},
   types = {},

@@ -1,7 +1,7 @@
-import $helpers from "jt-helpers";
+import helpers from "jt-helpers";
 
-export const helpers = {
-  ...$helpers,
+export default {
+  ...helpers,
   deepCopy(obj) {
     return JSON.parse(JSON.stringify(obj));
   },
