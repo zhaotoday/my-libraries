@@ -8,7 +8,7 @@
     </div>
   </div>
   <slot name="default" />
-  <pagination :total="total" :page-size="pageSize"></pagination>
+  <pagination :total="total" :page-size="pageSize" />
 </template>
 
 <script src="./script.js"></script>
