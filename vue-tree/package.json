@@ -1,7 +1,7 @@
 {
-  "name": "element-plus-utils",
-  "version": "0.0.2",
-  "description": "element-plus utils",
+  "name": "vue-tree",
+  "version": "0.0.3",
+  "description": "a vue tree",
   "main": "index.js",
   "author": "zhaojintian",
   "license": "ISC",
@@ -14,6 +14,7 @@
     "prettier": "^1.19.1"
   },
   "dependencies": {
-    "jt-helpers": "0.0.8"
+    "jt-helpers": "0.0.8",
+    "jt-storage": "0.0.2"
   }
 }
