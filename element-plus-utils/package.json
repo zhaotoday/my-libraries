@@ -1,0 +1,8 @@
+{
+  "name": "element-plus-utils",
+  "version": "0.0.1",
+  "description": "element-plus utils",
+  "main": "index.js",
+  "author": "zhaojintian",
+  "license": "ISC"
+}
