@@ -27,11 +27,3 @@
     @include text--overflow(#{$i});
   }
 }
-
-.c-card {
-  @include m(pb0) {
-    .el-card__body {
-      padding-bottom: 0;
-    }
-  }
-}
