@@ -4,5 +4,14 @@
   "description": "element-plus utils",
   "main": "index.js",
   "author": "zhaojintian",
-  "license": "ISC"
+  "license": "ISC",
+
+
+  "devDependencies": {
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-vue": "^7.1.0",
+    "prettier": "^1.19.1"
+  }
 }
