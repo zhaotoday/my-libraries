@@ -1,8 +1,8 @@
 import { useRouter } from "vue-router";
-import REST from "jt-rest";
+import $REST from "jt-rest";
 import { ElMessage } from "element-plus";
 
-export default class extends REST {
+export class REST extends $REST {
   showLoading() {}
 
   hideLoading() {}
