@@ -21,6 +21,7 @@
     "jt-storage": "0.0.2",
     "minireset.css": "0.0.6",
     "sass-utils": "^1.0.23",
+    "vue": "^3.0.4",
     "vue-router": "^4.0.2"
   }
 }
