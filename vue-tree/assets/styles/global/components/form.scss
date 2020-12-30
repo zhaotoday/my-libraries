@@ -1,0 +1,38 @@
+@include c(form) {
+  @include block--center;
+
+  width: 1130px;
+
+  @include e(full) {
+    width: 100% !important;
+  }
+
+  @include e(title) {
+    @include padding(null, null, 16px);
+
+    line-height: 100%;
+  }
+
+  @include m(checkbox2) {
+    .el-checkbox {
+      @include margin(4px, null, 4px);
+
+      box-sizing: border-box;
+      width: 40%;
+    }
+  }
+
+}
+
+@include c(definition) {
+  @include e(title) {
+    padding-bottom: 8px;
+    line-height: 100%;
+  }
+
+  @include e(body) {
+    padding-bottom: 20px;
+    line-height: 120%;
+    word-break: break-all;
+  }
+}
