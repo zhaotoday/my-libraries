@@ -107,9 +107,10 @@ export default class REST {
   /**
    * 附加路劲
    * @param {string} [path=''] 路劲
+   * @param {string} [splitter='/'] 分隔符
    */
-  addPath (path = '') {
-    this.path = this.path ? `${this.path}/${path}` : path
+  addPath (path = '', splitter='/') {
+    this.path = this.path ? `${this.path}${splitter}${path}` : path
 
     return this
   }
