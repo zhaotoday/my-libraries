@@ -1,9 +1,9 @@
 {
   "name": "wx-bridge",
-  "moduleName": "wxb",
-  "version": "0.0.31",
+  "moduleName": "wx",
+  "version": "0.0.33",
   "description": "bridge for mini program",
-  "main": "dist/index.js",
+  "main": "src/index.js",
   "scripts": {
     "dev": "better-npm-run dev",
     "build": "better-npm-run build"
