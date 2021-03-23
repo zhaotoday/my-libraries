@@ -1,5 +1,3 @@
-import { helpers } from "./utils/helpers";
-
 const $wx = {};
 
 const promisify = (fn, options) => {
