@@ -13,7 +13,7 @@ export default class REST {
      * 接口基础地址
      * @type {string}
      */
-    this.baseURL = ''
+    this.baseUrl = ''
 
     /**
      * 接口版本
@@ -67,7 +67,7 @@ export default class REST {
     return typeof wx !== 'undefined' && wx.request
       ? new Promise((resolve, reject) => {
         wx.request({
-          url: this.baseURL + url,
+          url: this.baseUrl + url,
           header: this.headers,
           method,
           data: body,
@@ -82,7 +82,7 @@ export default class REST {
         })
       })
       : axios({
-        baseURL: this.baseURL,
+        baseUrl: this.baseUrl,
         headers: this.headers,
         method,
         timeout,

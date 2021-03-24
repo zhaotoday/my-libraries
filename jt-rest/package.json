@@ -1,7 +1,7 @@
 {
   "name": "jt-rest",
-  "moduleName": "REST",
-  "version": "0.0.13",
+  "moduleName": "Rest",
+  "version": "0.0.15",
   "description": "RESTful API",
   "main": "dist/index.js",
   "scripts": {
