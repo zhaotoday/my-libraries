@@ -54,5 +54,25 @@ export default {
   },
   toLowerCamelCase (str) {
     return str.replace(/-([a-z])/g, (all, letter) => letter.toUpperCase())
+  },
+  formatHtml(html = "") {
+    return html.replace(/\<img/gi, '<img style="max-width: 100%; height: auto" ');
+  },
+  page(array, size) {
+    const length = array.length;
+    const newArray = [];
+    const i = Math.ceil(length / size);
+
+    let j = 0;
+
+    while (j < i) {
+      const spare = length - j * size >= size ? size : length - j * size;
+      const temp = array.slice(j * size, j * size + spare);
+
+      newArray.push(temp);
+      j++;
+    }
+
+    return newArray;
   }
 }
