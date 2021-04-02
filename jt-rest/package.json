@@ -1,9 +1,9 @@
 {
   "name": "jt-rest",
   "moduleName": "Rest",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "RESTful API",
-  "main": "dist/index.js",
+  "main": "src/index.js",
   "scripts": {
     "dev": "better-npm-run dev",
     "build": "better-npm-run build"
