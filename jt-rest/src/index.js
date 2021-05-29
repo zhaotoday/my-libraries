@@ -61,7 +61,7 @@ export default class REST {
 
     // GET
     if (query) {
-      url = `${url}${this.toURL(query)}`
+      url = `${url}${this.toUrl(query)}`
     }
 
     return typeof wx !== 'undefined' && wx.request
@@ -96,7 +96,7 @@ export default class REST {
    * @param {Object} obj 待转化对象
    * @return {string}
    */
-  toURL (obj) {
+  toUrl (obj) {
     if (!obj || !Object.keys(obj).length) {
       return ''
     }
