@@ -4,7 +4,7 @@ import axios from 'axios'
  * 基于 axios 的 RESTful HTTP 简单封装
  * @author 赵金添 <729234283@qq.com>
  */
-export default class REST {
+export default class Rest {
   /**
    * 构造方法
    */
