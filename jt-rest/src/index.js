@@ -82,7 +82,7 @@ export default class Rest {
         })
       })
       : axios({
-        baseUrl: this.baseUrl,
+        baseURL: this.baseUrl,
         headers: this.headers,
         method,
         timeout,
