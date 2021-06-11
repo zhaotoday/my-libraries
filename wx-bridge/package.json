@@ -1,6 +1,6 @@
 {
   "name": "wx-bridge",
-  "version": "0.0.36",
+  "version": "0.0.37",
   "description": "bridge for mini program",
   "main": "src/index.js",
   "scripts": {}

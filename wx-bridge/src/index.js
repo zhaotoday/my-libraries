@@ -2,7 +2,7 @@ const $wx = {};
 
 const promisify = (fn, options) => {
   return new Promise((resolve, reject) => {
-    (uni || wx)[fn](
+    wx[fn](
       Object.assign({}, options, {
         success: resolve,
         fail: reject
@@ -66,7 +66,7 @@ const asyncFunctions = [
   "closeBluetoothAdapter"
 ];
 
-Object.keys(uni || wx).forEach(key => {
+Object.keys(wx).forEach(key => {
   switch (true) {
     case key === "showToast":
       $wx[key] = options => promisify(key, { icon: "none", ...options });
@@ -112,7 +112,7 @@ Object.keys(uni || wx).forEach(key => {
       break;
 
     default:
-      $wx[key] = (uni || wx)[key];
+      $wx[key] = wx[key];
   }
 });
 
