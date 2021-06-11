@@ -1,29 +1,7 @@
 {
   "name": "wx-bridge",
-  "moduleName": "wx",
-  "version": "0.0.35",
+  "version": "0.0.36",
   "description": "bridge for mini program",
   "main": "src/index.js",
-  "scripts": {
-    "dev": "better-npm-run dev",
-    "build": "better-npm-run build"
-  },
-  "betterScripts": {
-    "build": {
-      "command": "node ../.build",
-      "env": {
-        "BUILD": "production"
-      }
-    },
-    "dev": {
-      "command": "node ../.build",
-      "env": {
-        "BUILD": "development"
-      }
-    }
-  },
-  "devDependencies": {
-    "better-npm-run": "^0.1.0"
-  },
-  "dependencies": {}
+  "scripts": {}
 }

@@ -2,7 +2,7 @@ const $wx = {};
 
 const promisify = (fn, options) => {
   return new Promise((resolve, reject) => {
-    wx[fn](
+    (uni || wx)[fn](
       Object.assign({}, options, {
         success: resolve,
         fail: reject
@@ -46,10 +46,27 @@ const asyncFunctions = [
   "chooseLocation",
   "chooseMessageFile",
   "saveFile",
-  "openDocument"
+  "openDocument",
+  "writeBLECharacteristicValue",
+  "setBLEMTU",
+  "readBLECharacteristicValue",
+  "notifyBLECharacteristicValueChange",
+  "makeBluetoothPair",
+  "getBLEDeviceServices",
+  "getBLEDeviceRSSI",
+  "getBLEDeviceCharacteristics",
+  "createBLEConnection",
+  "closeBLEConnection",
+  "stopBluetoothDevicesDiscovery",
+  "startBluetoothDevicesDiscovery",
+  "openBluetoothAdapter",
+  "getConnectedBluetoothDevices",
+  "getBluetoothDevices",
+  "getBluetoothAdapterState",
+  "closeBluetoothAdapter"
 ];
 
-Object.keys(wx).forEach(key => {
+Object.keys(uni || wx).forEach(key => {
   switch (true) {
     case key === "showToast":
       $wx[key] = options => promisify(key, { icon: "none", ...options });
@@ -95,7 +112,7 @@ Object.keys(wx).forEach(key => {
       break;
 
     default:
-      $wx[key] = wx[key];
+      $wx[key] = (uni || wx)[key];
   }
 });
 
