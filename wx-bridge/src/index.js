@@ -15,6 +15,7 @@ const asyncFunctions = [
   "request",
   "getSetting",
   "getUserInfo",
+  "getUserProfile",
   "checkSession",
   "login",
   "navigateTo",
