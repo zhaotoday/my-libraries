@@ -74,5 +74,18 @@ export default {
     }
 
     return newArray;
+  },
+  addArrayItem(array, item){
+    return [...array, item]
+  },
+  deleteArrayItem(array, item){
+    const index = array.indexOf(item);
+    const returnArray = helpers.deepCopy(array);
+
+    if (index !== -1) {
+      returnArray.splice(index, 1);
+    }
+
+    return returnArray;
   }
 }
