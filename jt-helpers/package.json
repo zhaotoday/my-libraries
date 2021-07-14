@@ -1,7 +1,7 @@
 {
   "name": "jt-helpers",
   "moduleName": "helpers",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "env",
   "main": "dist/index.js",
   "scripts": {

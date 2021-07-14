@@ -83,7 +83,7 @@ export default {
   },
   deleteArrayItem(array, item) {
     const index = array.indexOf(item);
-    const returnArray = helpers.deepCopy(array);
+    const returnArray = this.deepCopy(array);
 
     if (index !== -1) {
       returnArray.splice(index, 1);
