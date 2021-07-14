@@ -1,62 +1,65 @@
 export default {
-  isEmpty (value) {
-    return value === null || value === undefined || value.trim() === ''
+  isEmpty(value) {
+    return value === null || value === undefined || value.trim() === "";
   },
-  keyMirror (obj) {
-    let ret = {}
-    let key
+  keyMirror(obj) {
+    let ret = {};
+    let key;
 
     for (key in obj) {
       if (!obj.hasOwnProperty(key)) {
-        continue
+        continue;
       }
 
-      ret[key] = key
+      ret[key] = key;
     }
 
-    return ret
+    return ret;
   },
-  loadScript (url) {
-    const httpReq = new window.XMLHttpRequest()
+  loadScript(url) {
+    const httpReq = new window.XMLHttpRequest();
 
-    httpReq.open('GET', url, true)
-    httpReq.send(null)
+    httpReq.open("GET", url, true);
+    httpReq.send(null);
   },
-  sleep (n) {
-    return new Promise(resolve => {
-      setTimeout(resolve, n)
-    })
+  sleep(n) {
+    return new Promise((resolve) => {
+      setTimeout(resolve, n);
+    });
   },
-  intercept (fn, { beforeCall, req, res } = {}) {
-    return async options => {
-      const fnOptions = req ? req(options) : options
+  intercept(fn, { beforeCall, req, res } = {}) {
+    return async (options) => {
+      const fnOptions = req ? req(options) : options;
 
-      beforeCall && await beforeCall(fnOptions)
+      beforeCall && (await beforeCall(fnOptions));
 
-      return res ? res(fn(fnOptions)) : fn(fnOptions)
-    }
+      return res ? res(fn(fnOptions)) : fn(fnOptions);
+    };
   },
-  getItem (items, key, val) {
+  getItem(items, key, val) {
     return items && items.length
-      ? (items.find(item => item[key] === val) || {})
-      : {}
+      ? items.find((item) => item[key] === val) || {}
+      : {};
   },
-  encryptPhoneNumber (phoneNumber) {
+  encryptPhoneNumber(phoneNumber) {
     return phoneNumber
       ? `${phoneNumber.substring(0, 3)}****${phoneNumber.substring(7, 11)}`
-      : ''
+      : "";
   },
-  deepCopy (obj) {
-    return JSON.parse(JSON.stringify(obj))
+  deepCopy(obj) {
+    return JSON.parse(JSON.stringify(obj));
   },
-  formatNumber (number) {
-    return parseFloat((number || 0).toFixed(2))
+  formatNumber(number) {
+    return parseFloat((number || 0).toFixed(2));
   },
-  toLowerCamelCase (str) {
-    return str.replace(/-([a-z])/g, (all, letter) => letter.toUpperCase())
+  toLowerCamelCase(str) {
+    return str.replace(/-([a-z])/g, (all, letter) => letter.toUpperCase());
   },
   formatHtml(html = "") {
-    return html.replace(/\<img/gi, '<img style="max-width: 100%; height: auto" ');
+    return html.replace(
+      /\<img/gi,
+      '<img style="max-width: 100%; height: auto" '
+    );
   },
   page(array, size) {
     const length = array.length;
@@ -75,10 +78,10 @@ export default {
 
     return newArray;
   },
-  addArrayItem(array, item){
-    return [...array, item]
+  addArrayItem(array, item) {
+    return [...array, item];
   },
-  deleteArrayItem(array, item){
+  deleteArrayItem(array, item) {
     const index = array.indexOf(item);
     const returnArray = helpers.deepCopy(array);
 
@@ -87,5 +90,13 @@ export default {
     }
 
     return returnArray;
-  }
-}
+  },
+  download(url) {
+    const iframe = document.createElement("iframe");
+
+    iframe.src = url;
+    iframe.style.display = "none";
+
+    document.body.appendChild(iframe);
+  },
+};
