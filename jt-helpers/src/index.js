@@ -49,8 +49,8 @@ export default {
   deepCopy(obj) {
     return JSON.parse(JSON.stringify(obj));
   },
-  formatNumber(number) {
-    return parseFloat((number || 0).toFixed(2));
+  formatNumber(number, decimalPlaces = 2) {
+    return parseFloat((number || 0).toFixed(decimalPlaces));
   },
   toLowerCamelCase(str) {
     return str.replace(/-([a-z])/g, (all, letter) => letter.toUpperCase());
