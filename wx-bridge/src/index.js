@@ -64,7 +64,8 @@ const asyncFunctions = [
   "getConnectedBluetoothDevices",
   "getBluetoothDevices",
   "getBluetoothAdapterState",
-  "closeBluetoothAdapter"
+  "closeBluetoothAdapter",
+  "share"
 ];
 
 Object.keys(wx).forEach(key => {
