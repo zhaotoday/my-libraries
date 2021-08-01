@@ -34,7 +34,7 @@ export default class Rest {
     this.headers = {}
 
     // 支持的请求方式
-    const methods = ['GET', 'POST', 'PATCH', 'PUT', 'DELETE']
+    const methods = ['get', 'post', 'patch', 'put', 'delete']
 
     // 注册方法到 this
     methods.forEach((method) => {
