@@ -70,6 +70,7 @@ export default class Rest {
           url: this.baseUrl + url,
           header: this.headers,
           method,
+          dataType: options.dataType || 'json',
           data: body,
           success: res => {
             if ((res.statusCode + '').charAt(0) === '2') {
