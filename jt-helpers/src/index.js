@@ -61,7 +61,7 @@ export default {
       '<img style="max-width: 100%; height: auto" '
     ).replace(
       /\<iframe/gi,
-        '<iframe style="width: 100%; height: auto" ');
+        '<iframe style="width: 100%; min-height: 200px" ');
   },
   page(array, size) {
     const length = array.length;
