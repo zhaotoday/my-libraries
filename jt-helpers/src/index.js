@@ -1,4 +1,7 @@
 export default {
+  to(promise) {
+    return promise.then(res => [null, res]).catch(error => [error, null]);
+  },
   isEmpty(value) {
     return value === null || value === undefined || value.trim() === "";
   },
