@@ -1,6 +1,6 @@
 export default {
   to(promise) {
-    return promise.then(res => [null, res]).catch(error => [error, null]);
+    return promise.then((res) => [null, res]).catch((error) => [error, null]);
   },
   isEmpty(value) {
     return value === null || value === undefined || value.trim() === "";
@@ -59,12 +59,10 @@ export default {
     return str.replace(/-([a-z])/g, (all, letter) => letter.toUpperCase());
   },
   formatHtml(html = "") {
-    return html.replace(
-      /\<img/gi,
-      '<img style="max-width: 100%; height: auto" '
-    ).replace(
-      /\<iframe/gi,
-        '<iframe style="width: 100%; min-height: 200px" ');
+    return html
+      .replace('style=""', "")
+      .replace(/\<img/gi, '<img style="max-width: 100%; height: auto" ')
+      .replace(/\<iframe/gi, '<iframe style="width: 100%; min-height: 200px" ');
   },
   page(array, size) {
     const length = array.length;
