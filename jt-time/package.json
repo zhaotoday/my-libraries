@@ -1,7 +1,7 @@
 {
   "name": "jt-time",
   "moduleName": "time",
-  "version": "0.0.10",
+  "version": "1.0.0",
   "description": "env",
   "main": "dist/index.js",
   "scripts": {
@@ -26,6 +26,6 @@
     "better-npm-run": "^0.1.0"
   },
   "dependencies": {
-    "dayjs": "^1.7.5"
+    "dayjs": "^1.11.10"
   }
 }
