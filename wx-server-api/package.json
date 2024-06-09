@@ -1,6 +1,6 @@
 {
   "name": "wx-server-api",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,6 @@
   "author": "zhaojintian",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.18.0"
+    "axios": "^1.7.2"
   }
 }

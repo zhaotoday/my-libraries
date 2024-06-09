@@ -1,6 +1,6 @@
 const axios = require('axios')
 
-module.exports = config => {
+module.exports = () => {
   return {
     async send (
       {
